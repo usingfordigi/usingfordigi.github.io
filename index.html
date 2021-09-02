@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="brand-title"> </div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Watch list</a></li>
+      </ul>
+
+  </div>
+  </nav>
+
+  <h2>Easy Stock</h2>
+  <img src="forgihan.svg" class="center">
+  <div id="login_div" class="main-div">
+    <h3>Easy Stock Web Login </h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome  </h3>
+    <p id="user_para">Welcome to Easy Stock. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,288L18.5,245.3C36.9,203,74,117,111,96C147.7,75,185,117,222,160C258.5,203,295,245,332,261.3C369.2,277,406,267,443,256C480,245,517,235,554,197.3C590.8,160,628,96,665,64C701.5,32,738,32,775,69.3C812.3,107,849,181,886,181.3C923.1,181,960,107,997,74.7C1033.8,43,1071,53,1108,48C1144.6,43,1182,21,1218,32C1255.4,43,1292,85,1329,138.7C1366.2,192,1403,256,1422,288L1440,320L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path></svg>  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB0pR9Y8iiaXDfzj6XCv3ZQBIYSaGKA28w",
+      authDomain: "fir-web-login-8b7c5.firebaseapp.com",
+      databaseURL: "https://fir-web-login-8b7c5.firebaseio.com",
+      projectId: "fir-web-login-8b7c5",
+      storageBucket: "fir-web-login-8b7c5.appspot.com",
+      messagingSenderId: "301701306998"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
